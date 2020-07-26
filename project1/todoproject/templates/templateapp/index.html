@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+       <h1>Add any task...</h1>
+     <form action="/add/" method='POST'>
+     Enter new task:<input type="text" id='task' /><br>
+     <input class="col-4 offset-1 mybtn" type="submit" id = "submitBtn" value="Submit"/>
+    
+     {% csrf_token %}
+     </form>
+   </div>
+   
+
+</body>
+</html>

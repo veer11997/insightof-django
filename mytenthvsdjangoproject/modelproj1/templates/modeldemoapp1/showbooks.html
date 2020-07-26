@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h2>Following are the books in the database</h2>
+        <table border='1' bgcolor="green">
+        <tr><th>Book Id</th><th>Book Name</th><th>Book Price</th><th>Subject</th><th>Pub Date</th></tr>
+        {% for b in book_list %}
+        <tr><td>{{b.book_Id}}</td><td>{{b.book_name}}</td><td>{{b.bookprice}}</td><td>{{b.subject}}</td><td>{{b.pub_date}}</td></tr>
+        {% endfor %}
+        </table>
+        
+</body>
+</html>

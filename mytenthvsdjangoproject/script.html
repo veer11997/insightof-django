@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    function show()
+    {
+        var now=new Date();
+        var x=document.getElementById("clock");
+        x.innerhtml="<h2>"+now+"</h2>";
+
+    }
+
+    function startclock()
+    {
+        fnid=setInterval(show,1000);
+
+    }
+
+    function stopclock()
+    {
+        clearInterval(fnid);
+
+    }
+
+    </script>
+
+</head>
+<body>
+
+    <input type="button" value="show watch" onclick="startclock()">
+    <input type="button" value="dont show"  onclick="stopclock()">
+    <p id ="clock">
+
+    </p>
+
+</body>
+</html>
